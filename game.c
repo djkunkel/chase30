@@ -833,8 +833,9 @@ void game_loop(void)
 
 
 //this is where the program starts
-extern const void sound_data[];
-extern const void music_data[];
+
+
+
 
 
 void setup_graphics(){
@@ -844,13 +845,32 @@ void setup_graphics(){
   vram_write(0x8000, 0x2000);
 }
 
+
+extern const void sound_data[];
+extern const void music_data[];
+void setup_sound(){
+  //swap 8000 to the bank that contains music
+  SET_REG(1);
+  
+  famitone_init(&music_data);
+  sfx_init(&sound_data);
+
+  //in order to bank music and not have its bank always in during gameplay,
+  //you'd have to wrap all the neslib calls to make sure the bank is correct before calling the base function
+  //or modify famitone to understand which bank its data is in
+
+  nmi_set_callback(famitone_update);
+}
+
 void main(void)
 {
 
   setup_graphics();
-  famitone_init(&music_data);
-  sfx_init(&sound_data);
-  nmi_set_callback(famitone_update);
+  setup_sound();
+
+  //at this point, setup_sound as set the prg bank to 01, and it can't change
+  //anymore while music and sfx are being played unless you wrap calls to neslib 
+  //to switch banks and restore after each action
   
   while(1)//infinite loop, title-gameplay
   {

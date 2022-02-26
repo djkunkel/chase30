@@ -77,9 +77,10 @@
 	.export		_player_move
 	.export		_put_num
 	.export		_game_loop
+	.export		_setup_graphics
 	.import		_sound_data
 	.import		_music_data
-	.export		_setup_graphics
+	.export		_setup_sound
 	.export		_main
 
 .segment	"DATA"
@@ -6721,19 +6722,20 @@ L003D:	lda     _game_done
 .endproc
 
 ; ---------------------------------------------------------------
-; void __near__ main (void)
+; void __near__ setup_sound (void)
 ; ---------------------------------------------------------------
 
 .segment	"CODE"
 
-.proc	_main: near
+.proc	_setup_sound: near
 
 .segment	"CODE"
 
 ;
-; setup_graphics();
+; SET_REG(1);
 ;
-	jsr     _setup_graphics
+	lda     #$01
+	sta     $C000
 ;
 ; famitone_init(&music_data);
 ;
@@ -6751,7 +6753,28 @@ L003D:	lda     _game_done
 ;
 	lda     #<(_famitone_update)
 	ldx     #>(_famitone_update)
-	jsr     _nmi_set_callback
+	jmp     _nmi_set_callback
+
+.endproc
+
+; ---------------------------------------------------------------
+; void __near__ main (void)
+; ---------------------------------------------------------------
+
+.segment	"CODE"
+
+.proc	_main: near
+
+.segment	"CODE"
+
+;
+; setup_graphics();
+;
+	jsr     _setup_graphics
+;
+; setup_sound();
+;
+	jsr     _setup_sound
 ;
 ; title_screen();
 ;
