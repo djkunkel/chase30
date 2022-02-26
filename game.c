@@ -839,8 +839,6 @@ void game_loop(void)
 
 
 void setup_graphics(){
-  //ensure we are looking at the right bank PRG00 contains the tile data
-  SET_REG(0x00);
   vram_adr(0x0);
   vram_write(0x8000, 0x2000);
 }
@@ -849,8 +847,7 @@ void setup_graphics(){
 extern const void sound_data[];
 extern const void music_data[];
 void setup_sound(){
-  //swap 8000 to the bank that contains music
-  SET_REG(1);
+  
   
   famitone_init(&music_data);
   sfx_init(&sound_data);
@@ -864,8 +861,11 @@ void setup_sound(){
 
 void main(void)
 {
-
+  //ensure we are looking at the right bank PRG00 contains the tile data
+  SET_REG(0);
   setup_graphics();
+  //swap 8000 to the bank that contains music and rodata
+  SET_REG(1);
   setup_sound();
 
   //at this point, setup_sound as set the prg bank to 01, and it can't change

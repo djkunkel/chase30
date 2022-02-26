@@ -6701,14 +6701,10 @@ L003D:	lda     _game_done
 .segment	"CODE"
 
 ;
-; SET_REG(0x00);
-;
-	lda     #$00
-	sta     $C000
-;
 ; vram_adr(0x0);
 ;
-	tax
+	ldx     #$00
+	txa
 	jsr     _vram_adr
 ;
 ; vram_write(0x8000, 0x2000);
@@ -6731,11 +6727,6 @@ L003D:	lda     _game_done
 
 .segment	"CODE"
 
-;
-; SET_REG(1);
-;
-	lda     #$01
-	sta     $C000
 ;
 ; famitone_init(&music_data);
 ;
@@ -6768,9 +6759,19 @@ L003D:	lda     _game_done
 .segment	"CODE"
 
 ;
+; SET_REG(0);
+;
+	lda     #$00
+	sta     $C000
+;
 ; setup_graphics();
 ;
 	jsr     _setup_graphics
+;
+; SET_REG(1);
+;
+	lda     #$01
+	sta     $C000
 ;
 ; setup_sound();
 ;
