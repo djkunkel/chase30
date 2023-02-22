@@ -18,81 +18,81 @@ audio.o:
     MUSIC             Offs=000000  Size=000605  Align=00001  Fill=0000
 tileset.o:
     CHARS             Offs=000000  Size=002000  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/neslib2.lib(pad.o):
+F:/prj/nes/dev2/cc65/lib/neslib2.lib(pad.o):
     CODE              Offs=0014B9  Size=000051  Align=00001  Fill=0000
     ZEROPAGE          Offs=00009E  Size=000006  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/neslib2.lib(rand.o):
+F:/prj/nes/dev2/cc65/lib/neslib2.lib(rand.o):
     CODE              Offs=00150A  Size=000032  Align=00001  Fill=0000
     ZEROPAGE          Offs=0000A4  Size=000002  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/neslib2.lib(vram_read.o):
+F:/prj/nes/dev2/cc65/lib/neslib2.lib(vram_read.o):
     CODE              Offs=00153C  Size=00002A  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/neslib2.lib(vram_unrle.o):
+F:/prj/nes/dev2/cc65/lib/neslib2.lib(vram_unrle.o):
     CODE              Offs=001566  Size=000037  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/neslib2.lib(oam_meta_spr.o):
+F:/prj/nes/dev2/cc65/lib/neslib2.lib(oam_meta_spr.o):
     CODE              Offs=00159D  Size=00004A  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(addysp.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(addysp.o):
     CODE              Offs=0015E7  Size=00000E  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(aslax2.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(aslax2.o):
     CODE              Offs=0015F5  Size=00000B  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(aslax3.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(aslax3.o):
     CODE              Offs=001600  Size=00000E  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(aslax4.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(aslax4.o):
     CODE              Offs=00160E  Size=000011  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(asrax1.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(asrax1.o):
     CODE              Offs=00161F  Size=00000A  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(asrax4.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(asrax4.o):
     CODE              Offs=001629  Size=000019  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(bneg.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(bneg.o):
     CODE              Offs=001642  Size=00000E  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(condes.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(condes.o):
     CODE              Offs=001650  Size=00000C  Align=00001  Fill=0000
     DATA              Offs=000006  Size=000025  Align=00001  Fill=0000
     ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(copydata.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(copydata.o):
     CODE              Offs=00165C  Size=00002D  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(decsp3.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(decsp3.o):
     CODE              Offs=001689  Size=00000D  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(decsp4.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(decsp4.o):
     CODE              Offs=001696  Size=00000D  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(icmp.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(icmp.o):
     CODE              Offs=0016A3  Size=00002E  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(incsp1.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(incsp1.o):
     CODE              Offs=0016D1  Size=000007  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(incsp2.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(incsp2.o):
     CODE              Offs=0016D8  Size=000016  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(incsp5.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(incsp5.o):
     CODE              Offs=0016EE  Size=000005  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(memcpy.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(memcpy.o):
     CODE              Offs=0016F3  Size=00003C  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(mod.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(mod.o):
     CODE              Offs=00172F  Size=000011  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(negabs.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(negabs.o):
     CODE              Offs=001740  Size=000012  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(popa.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(popa.o):
     CODE              Offs=001752  Size=00000C  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(popptr1.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(popptr1.o):
     CODE              Offs=00175E  Size=00000E  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(pusha.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(pusha.o):
     CODE              Offs=00176C  Size=000016  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(pushax.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(pushax.o):
     CODE              Offs=001782  Size=00001A  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(pushwsp.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(pushwsp.o):
     CODE              Offs=00179C  Size=00001C  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(shelp.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(shelp.o):
     CODE              Offs=0017B8  Size=000020  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(shrax4.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(shrax4.o):
     CODE              Offs=0017D8  Size=000011  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(staxspi.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(staxspi.o):
     CODE              Offs=0017E9  Size=00001B  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(sub.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(sub.o):
     CODE              Offs=001804  Size=000015  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(udiv.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(udiv.o):
     CODE              Offs=001819  Size=00004F  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(umod.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(umod.o):
     CODE              Offs=001868  Size=000011  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(zerobss.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(zerobss.o):
     CODE              Offs=001879  Size=000023  Align=00001  Fill=0000
-E:/prj/nes/dev2/cc65/lib/nes.lib(zeropage.o):
+F:/prj/nes/dev2/cc65/lib/nes.lib(zeropage.o):
     ZEROPAGE          Offs=0000A6  Size=00001A  Align=00001  Fill=0000
 
 

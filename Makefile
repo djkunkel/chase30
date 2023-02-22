@@ -11,7 +11,7 @@ chase.nes: game.o famitone2.o audio.o tileset.o mapper30.cfg nrom.cfg
 
 game.o: game.c
 	$(CC65_HOME)\bin\cc65.exe -Oi game.c --add-source
-	$(CC65_HOME)\bin\ca65.exe game.s
+	$(CC65_HOME)\bin\ca65.exe -l game.lst game.s
 
 audio.o: audio.s sounds.s music.s
 	$(CC65_HOME)\bin\ca65.exe audio.s
